@@ -1,7 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import BadgeNew from './containers/BadgeNew.jsx'
+import '../node_modules/bootstrap/dist/css/bootstrap.css'
+import './global.css'
 
-const container = document.getElementById('app');
 
-const element = <h1>Hello, Platzi Badges</h1>;
-ReactDOM.render(element, container);
+ReactDOM.render(<BadgeNew/>, document.getElementById('app'));
+    
