@@ -1,4 +1,6 @@
 import React from 'react';
+import './styles/BadgeList.css'
+import twitterLogo from '../images/twitter.png'
 
 // import './styles/BadgesList.css';
 
@@ -33,9 +35,16 @@ class BadgesList extends React.Component {
           {this.props.badges.map(badge => {
             return (
               <li key={badge.id}>
-                <p>
-                    {badge.firstName} {badge.lastName}
-                </p>
+                
+                <img src={badge.avatarUrl} alt="Avatar" className="avatar"/>
+                
+                <div className="info-container">
+                  <p className="name">
+                      {badge.firstName} {badge.lastName}
+                  </p>
+                  <p className="twitter-username"> <img src={twitterLogo} alt="Logo Twitter" className="twitter-logo"/> @{badge.twitter}</p>
+                  <p className="job-name">{badge.jobTitle}</p>
+                </div>
               </li>
             );
           })}
