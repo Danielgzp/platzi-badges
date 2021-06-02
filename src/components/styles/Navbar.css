@@ -9,6 +9,7 @@
     text-decoration: none;
     display: flex;
     align-items: center;
+    width: 140px;
   }
   
   .Navbar__brand:hover {
