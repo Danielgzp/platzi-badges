@@ -1,10 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import BadgeNew from './containers/BadgeNew.jsx'
 import '../node_modules/bootstrap/dist/css/bootstrap.css'
+import App from './components/App';
 import './global.css'
-import Badges from './containers/Badges.jsx'
 
 
-ReactDOM.render(<Badges/>, document.getElementById('app'));
+ReactDOM.render(<App/>, document.getElementById('app'));
     
