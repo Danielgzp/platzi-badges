@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
-import Layout from './Layoutt';
+import Layout from './Layout';
 import Home from '../containers/Home';
 import Badges from '../containers/Badges';
 import BadgeNew from '../containers/BadgeNew';
