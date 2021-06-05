@@ -1,31 +1,7 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import './styles/NotFound.css';
-import astronautError from '../images/astronaut404.webp';
 
-function NotFound(){
-    return (
-        <React.Fragment>
-            <div className="Home_error">
-                <div className="container">
-                    <div className="row">
-                        <div className="Errors_container">
-                            <div className="Home__col-error col-12 col-md-5">
-                                <h1>ERROR 404</h1>
-                                <h2>Page not found</h2>
-                                <p>Lo sentimos, no hemos podido encontrar la pagina que buscabas</p>
-                                <Link to="/" className="btn btn-primary home-link">Volver al inicio</Link>
-                            </div>
-
-                            <div className="Home__col-error d-none d-md-block col-md-7">
-                                <img src={astronautError} alt="Astronauts" className="img-fluid p-4" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-      </React.Fragment>
-    );
+function NotFound() {
+  return <h1>404: Not Found</h1>;
 }
 
-export default NotFound
+export default NotFound;
