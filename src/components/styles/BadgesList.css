@@ -17,3 +17,7 @@
   width: 80px;
   height: 80px;
 }
+.badge_list{
+  display: flex;
+  flex-direction: column-reverse;
+}

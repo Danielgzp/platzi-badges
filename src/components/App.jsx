@@ -6,6 +6,8 @@ import Home from '../containers/Home';
 import Badges from '../containers/Badges';
 import BadgeNew from '../containers/BadgeNew';
 import NotFound from '../containers/NotFound';
+import BadgeEdit from '../containers/BadgeEdit'
+import BadgeDetails from '../containers/BadgeBetails'
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
           <Route exact path="/" component={Home} />
           <Route exact path="/badges" component={Badges} />
           <Route exact path="/badges/new" component={BadgeNew} />
+          <Route exact path="/badges/:badgeId" component={BadgeDetails} />
+          <Route exact path="/badges/:badgeId/edit" component={BadgeEdit} />
           <Route component={NotFound} />
         </Switch>
       </Layout>
