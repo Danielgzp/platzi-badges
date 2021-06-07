@@ -7,7 +7,7 @@ import Badges from '../containers/Badges';
 import BadgeNew from '../containers/BadgeNew';
 import NotFound from '../containers/NotFound';
 import BadgeEdit from '../containers/BadgeEdit'
-import BadgeDetails from '../containers/BadgeBetails'
+import BadgeDetails from '../containers/BadgeDetailsContainer'
 
 function App() {
   return (

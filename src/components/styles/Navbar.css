@@ -6,13 +6,16 @@
 
 .Navbar__brand {
   color: #ffffff;
-
   display: flex;
   align-items: center;
+  width: 200px;
+}
+.Navbar__brand span{
+  font-weight: 100;
 }
 
 .Navbar__brand:hover {
-  color: #ffffff;
+  color: rgba(0, 255, 0, 0.911);
   text-decoration: none;
 }
 

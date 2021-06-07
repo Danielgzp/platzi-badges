@@ -18,9 +18,10 @@ export default class Home extends Component {
                 className="img-fluid mb-2"
               />
 
-              <h1>Badge Management System</h1>
+              <h1>PRINT YOUR BADGES</h1>
+              <p>The easiest way to manage your conference</p>
               <Link className="btn btn-primary" to="/badges">
-                Start
+                Start Now
               </Link>
             </div>
 

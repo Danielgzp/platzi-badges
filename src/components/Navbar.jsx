@@ -8,8 +8,7 @@ const Navbar = () => (
         <div className="container-fluid">
             <Link to="/" className="Navbar__brand">
                 <img src={logo} alt="Logo" className="Navbar__brand-logo" />
-                <span className="fw-light">Platzi</span>
-                <span className="fw-bold">Conf</span>
+                <span>Platzi <b> Conference</b> </span>
             </Link>
         </div>
     </div>
