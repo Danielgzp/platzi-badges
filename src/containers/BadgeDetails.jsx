@@ -51,8 +51,7 @@ function BadgeDetails(props) {
           </div>
           <div className="col">
             <h2>Actions</h2>
-            <div>
-              <div>
+            <div className="BadgeDetails__buttons">
                 <button
                   onClick={() => {
                     setCount(count + 1);
@@ -67,21 +66,16 @@ function BadgeDetails(props) {
                 >
                   Edit
                 </Link>
-              </div>
-
-              <div>
                 <button onClick={props.onOpenModal} className="btn btn-danger">Delete</button>
                 <DeleteBadgeModal 
                   isOpen={props.modalIsOpen} 
                   onClose={props.onCloseModal} 
                   onDeleteBadge={props.onDeleteBadge} />
-                
-              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </div>  
   );
 }
 

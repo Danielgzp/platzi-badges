@@ -17,6 +17,9 @@
   
   .BadgeDetails__buttons {
     display: flex;
-    justify-content: flex-end;
-    margin-bottom: 1rem;
+    flex-direction: column;
+  }
+  .BadgeDetails__buttons button, a{
+    max-width: 190px;
+    margin-top: 20px;
   }
