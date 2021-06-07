@@ -1,10 +1,11 @@
 .BadgesList ul>li {
-  margin-bottom: 1rem;
+  margin-bottom: 20px;
 }
 
 .BadgesListItem {
+  padding: 20px;
   background: #FFFFFF;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.23);
+  box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.23);
   border-radius: 5px;
   display: flex;
   padding: 1rem;
@@ -21,20 +22,11 @@
   display: flex;
   flex-direction: column-reverse;
 }
-
-/*     
-                                       
-.BadgesList li{
-  padding: 10px;
-  box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.23);
-  border-radius: 30px;
-  display: flex;
-  margin-top: 20px;
-  width: 100%;
-  align-items: center;
-}
 .info-container{
   margin-left: 20px;
+} 
+.info-container p{
+  margin-bottom: 0;
 }
 .avatar{
   border-radius: 50%;
@@ -59,5 +51,3 @@
   font-size: 14px;
   font-weight: 500;
 }
-
-*/

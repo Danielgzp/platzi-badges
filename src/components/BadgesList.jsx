@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 import './styles/BadgesList.css';
 import Gravatar from './Gravatar';
 
+import twitterLogo from '../images/twitter.png'
+
 class BadgesListItem extends React.Component {
   render() {
     return (
@@ -13,15 +15,35 @@ class BadgesListItem extends React.Component {
           email={this.props.badge.email}
         />
 
-        <div>
-          <strong>
+        <div className="info-container">
+          <p className="name">
             {this.props.badge.firstName} {this.props.badge.lastName}
-          </strong>
-          <br />@{this.props.badge.twitter}
-          <br />
-          {this.props.badge.jobTitle}
+          </p>
+          <p className="twitter-username"><img src={twitterLogo} className="twitter-logo" alt="Logo twitter" /> @{this.props.badge.twitter} </p>
+          <p className="job-name"> {this.props.badge.jobTitle} </p>
         </div>
       </div>
+
+            /* <div className="BadgesList">
+            <ul className="list-unstyled">
+              {this.props.badges.map(badge => {
+                return (
+                  <li key={badge.id}>
+                    
+                    <img src={badge.avatarUrl} alt="Avatar" className="avatar"/>
+                    
+                    <div className="info-container">
+                      <p className="name">
+                          {badge.firstName} {badge.lastName}
+                      </p>
+                      <p className="twitter-username"> <img src={twitterLogo} alt="Logo Twitter" className="twitter-logo"/> @{badge.twitter}</p>
+                      <p className="job-name">{badge.jobTitle}</p>
+                    </div>
+                  </li>
+                );
+              })}
+            </ul>
+            </div> */
     );
   }
 }

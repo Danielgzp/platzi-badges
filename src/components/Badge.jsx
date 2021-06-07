@@ -4,6 +4,8 @@ import './styles/Badge.css';
 import confLogo from '../images/badge-header.svg';
 import Gravatar from './Gravatar';
 
+import twitterLogo from '../images/twitter.png'
+
 class Badge extends React.Component {
   render() {
     return (
@@ -21,7 +23,7 @@ class Badge extends React.Component {
 
         <div className="Badge__section-info">
           <h3>{this.props.jobTitle}</h3>
-          <div>@{this.props.twitter}</div>
+          <div> <img src={twitterLogo} className="twitter-logo" alt="Logo twitter" /> @{this.props.twitter}</div>
         </div>
 
         <div className="Badge__footer">#platziconf</div>
